@@ -3,7 +3,7 @@
 # name: learn-gha-tutorial
 
 # With user defined run-name
-run-name: gha-with-runname
+# run-name: gha-with-runname
 
 # Controls when the workflow will run
 on:
