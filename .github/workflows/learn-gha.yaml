@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 # The "name" field is ommited
-# name: learn-gha-tutorial
+name: learn-gha-tutorial
 
 # Controls when the workflow will run
 on:
