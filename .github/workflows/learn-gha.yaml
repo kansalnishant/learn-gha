@@ -21,11 +21,13 @@ on:
 
 # Let us trigger the workflows with a concurrency group
 concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
   #with the context
   #github.ref determine the current branch name
-   group: ${{ github.ref }}
+  #group: ${{ github.ref }}
   #group: learn-concurrency
-
+  
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
