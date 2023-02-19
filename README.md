@@ -1,1 +1,1 @@
-# learn-gha concurrency-2
+# learn-gha concurreny-2
