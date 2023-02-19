@@ -13,15 +13,12 @@ on:
   push:
     branches:
      - main
-  pull_request:
-    branches:
-     - main
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # Let us trigger the workflows with a concurrency group
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
   #with the context
   #github.ref determine the current branch name
