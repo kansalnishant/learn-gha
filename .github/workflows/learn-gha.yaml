@@ -21,7 +21,7 @@ on:
 
 # Let us trigger the workflows with a concurrency group
 concurrency:
-  group: ${{ github.head_ref || github.run_id }}
+  group: ${{ github.head_ref }}
   cancel-in-progress: true
   #with the context
   #github.ref determine the current branch name
