@@ -1,1 +1,1 @@
-# learn-gha concurreny-with-git.workflow-2
+# learn-gha concurreny-with-git.workflow
