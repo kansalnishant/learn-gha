@@ -31,6 +31,14 @@ concurrency:
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  print:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Run a one-line script
+      run: |
+          echo Hello to multi job understanding!
+          sleep 30s
+    
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
