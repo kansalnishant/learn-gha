@@ -46,7 +46,7 @@ jobs:
   build:
     if: ${{ github.actor }} == 'kansalnishant'
     runs-on: ubuntu-latest
-
+    timeout-minutes: 1
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -55,4 +55,4 @@ jobs:
       - name: Run a one-line script
         run: |
           echo Hello, concurrency!
-          sleep 1m
+          sleep 2m
