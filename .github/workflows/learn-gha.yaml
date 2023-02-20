@@ -33,6 +33,7 @@ concurrency:
 jobs:
   print:
    runs-on: ubuntu-latest
+   environment: test-environment
    steps:
     - name: Run a one-line script
       run: |
