@@ -35,12 +35,14 @@ jobs:
    runs-on: ubuntu-latest
    environment: test-environment
    outputs: 
-    output1: ${{ steps.step1.outputs.test }}
+    output: ${{ steps.step1.outputs.test }}
    
    steps:
     - id: step1
-      run: echo "test=hello" >> "$GITHUB_OUTPUT"
-          
+      run: echo "test=hello to check output" >> "$GITHUB_OUTPUT"
+    - name: check_putput
+      run: echo "$OUTPUT"
+  
   build:
     if: ${{ github.actor }} == 'kansalnishant'
     runs-on: ubuntu-latest
