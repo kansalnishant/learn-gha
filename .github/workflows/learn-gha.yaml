@@ -39,11 +39,8 @@ jobs:
    
    steps:
     - id: step1
-      run: |
-          echo Hello to multi job understanding!
-          echo "test=hello" >> "$GITHUB_OUTPUT"
-          sleep 30s
-  
+      run: echo "test=hello" >> "$GITHUB_OUTPUT"
+          
   build:
     if: ${{ github.actor }} == 'kansalnishant'
     runs-on: ubuntu-latest
