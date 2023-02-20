@@ -40,7 +40,7 @@ jobs:
           sleep 30s
   
   build:
-    if: github.repository == 'kansalnishant/learn-ckad'
+    if: ${{ github.actor }} == 'kansalnishant'
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
