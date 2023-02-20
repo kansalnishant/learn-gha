@@ -35,11 +35,12 @@ jobs:
    runs-on: ubuntu-latest
    environment: test-environment
    outputs: 
-    output1: ${{ steps.name.outputs }} >> "$GITHUB_OUTPUT"
+    output1: ${{ steps.name.outputs.test }} >> "$GITHUB_OUTPUT"
    steps:
     - name: Run a one-line script
       run: |
           echo Hello to multi job understanding!
+          echo "test=hello" >> "$GITHUB_OUTPUT"
           sleep 30s
   
   build:
