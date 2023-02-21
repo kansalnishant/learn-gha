@@ -40,9 +40,9 @@ jobs:
    steps:
     - name: give_input 
       id: give_input_step
-      run: echo "test=hello to check output" >> "$GITHUB_OUTPUT"
+      run: echo "TEST=hello to check output" >> "$GITHUB_OUTPUT"
     - name: check_output
-      run: echo "The output message is ${{ steps.give_input_step.test }}"
+      run: echo "The output message is ${{ steps.give_input_step.TEST }}"
   
   build:
     if: ${{ github.actor }} == 'kansalnishant'
